@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Veronika Javor is a frontend developer. Be the change: check out her website and her projects."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicons/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicons/apple-180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css"/>
+    <script defer src="script.js"></script>
+    <title>Veronika Javor Portfolio</title>
+  </head>
+  <body>
+    <div class="overlay hidden"></div>
+    <header class="header"> 
+      <a href="#" class="header-logo-link">
+          <img src="img/logo/logo.png" class="logo" alt="Veronika Javor Logo" />
+        </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#projects" class="nav-list__link">projects</a></li>
+          <li><a href="#about" class="nav-list__link">about</a></li>
+          <li><a href="#contact" class="nav-list__link">contact</a></li>
+        </ul>  
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav"name="close-outline"></ion-icon>
+      </button> 
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="container-small center">
+          <p class="hero-intro">Hi, my name is</p>
+          <h1 class="heading-primary">
+            <span class="special">V</span>eronika<br />
+            <span class="special">j</span>avor
+          </h1>
+          <p class="hero-main-text">I'm a junior frontend developer.</p>
+          <div class="hero-btn-box">
+            <a href="#projects" class="btn" >My projects</a>
+            <a href="#about" class="btn-transparent btn-mirror">About me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <h2 class="heading-secondary">projects</h2>
+        <div class="container-small center">
+
+          <!--PROJECT 1 -->
+          <div class="grid grid-2-cols">
+            <div class="project-image-container project-image-container-1">
+              <picture class="gallery-item gallery-item-1">
+                <source type="image/webp" srcset="img/project-imgs/project1/project-1-presentation.webp">
+                <img src="img/project-imgs/project1/project-1-presentation.png" class="project-img" alt="DesignX: view of the website in tablet and mobile size."></img>
+              </picture>
+            </div>
+            <div class="project-info-box">
+              <h3 class="heading-tertiary">DesignX</h3>
+              <p class="project-info">
+              A single page website made from scratch, responsive and hosted on
+              Netlify. First project I’ve made and designed.
+              </p>
+            
+              <div class="project-attributes">
+                <ul class="attribute-list">
+                  <li class="tag"><span>html5</span></li>
+                  <li class="tag"><span>css3</span></li>
+                </ul>
+                <ul class="attribute-list">
+                  <li>
+                    <a  href="https://designerx.netlify.app/" target=”_blank”
+                  rel="noopener noreferrer" class="source-link">
+                    <ion-icon class="source-icon"
+                    name="globe-outline" title="live"
+                    ></ion-icon>
+                    </a>
+                  </li>
+                   <li>
+                    <a  href="https://github.com/VeraQueen/designx-project-website" target=”_blank”
+                  rel="noopener noreferrer" class="source-link"
+                  ><ion-icon class="source-icon" name="logo-github" title="code"></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        
+
+          <!--PROJECT 2 -->
+          <div class="grid grid-2-cols">
+            <div class="project-info-box"> 
+              <h3 class="heading-tertiary">The Closest Number</h3>
+              <p class="project-info">
+                Reimagined closest number game with two players. No need to input, just press the button and enjoy this vanilla JavaScript game.
+              </p>
+  
+              <div class="project-attributes">
+                <ul class="attribute-list">
+                  <li class="tag"><span>html5</span></li>
+                  <li class="tag"><span>css3</span></li>
+                  <li class="tag"><span>javascript</span></li>
+                </ul>
+                <ul class="attribute-list">
+                  <li>
+                    <a  href="https://the-closest-number-game.netlify.app/" rel="noopener noreferrer" target=”_blank” class="source-link">
+                    <ion-icon
+                        class="source-icon"
+                        name="globe-outline"
+                        title="live"
+                     ></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a  href="https://github.com/VeraQueen/the-closest-number-game" target=”_blank”
+                  rel="noopener noreferrer" class="source-link"
+                    ><ion-icon class="source-icon" name="logo-github"
+                      title="code"></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="project-image-container project-image-container-2">
+              <picture class="gallery-item gallery-item-2">
+                <source type="image/webp" srcset="img/project-imgs/project2/project-2-presentation.webp">
+                 <img src="img/project-imgs/project2/project-2-presentation.png" class="project-img" alt="Laptop view of the Closest Number Game"></img>
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="cta container-small center">
+          <p class="cta-text">What's my next project?</p>
+          <a href="mailto:veronika.javor@gmail.com" class="btn" class="btn-link">Let's talk</a>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <h2 class="heading-secondary">More about me</h2>
+        <div class="container-small grid about-grid">
+          <p class="about-description center about-item-1">Hey! I’m Veronika and I love building and designing beautiful interfaces. I’m a self-taught frontend developer.  I’ve mastered primary education and English language, but decided to persue a career in software and web development.  I have not been mistaken.  Writing code fulfills my need to be creative, but also to learn and share knowledge. I have thoroughly enjoyed creating my first few projects and I can’t wait to make more.
+          </p>
+          <div class="illustrations-container about-item-2">
+            <div class="slider ">
+              <div class="slide">
+                <picture>
+                  <source type="image/webp" srcset="img/illustrations/woman-programming.webp">
+                  <img class="illustration"  src="img/illustrations/woman-programming.png" alt="Woman programming in an office setting"></img>
+                </picture>
+              </div>
+              <div class="slide">
+                <picture>
+                  <source type="image/webp" srcset="img/illustrations/friends.webp">
+                  <img class="illustration"  src="img/illustrations/friends.png" alt="Friends socializing and eating pizza"></img>
+                </picture>
+              </div>
+              <div class="slide">
+                <picture>
+                  <source type="image/webp" srcset="img/illustrations/reading.webp">
+                  <img class="illustration" src="img/illustrations/reading.png" alt="Woman standing on books and reading a book with Harry Potter quote"></img>
+                </picture>
+              </div>
+              <div class="slide">
+                <picture>
+                  <source type="image/webp" srcset="img/illustrations/games.webp">
+                  <img class="illustration" src="img/illustrations/games.png" alt="Board/card game accessories, netflix logo and video game controller"></img>
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class='slider-btns about-item-3'>
+            <button class="btn-left"><</button>
+            <button class="btn-right">></button>
+          </div>
+        </div>
+
+        
+
+        <div class="container-small center">
+          <h3 class="heading-tertiary">Skills and tools</h3>
+          <div class="container-skills">
+            <img class="skill skill-1" src="img/logo-skills/html.svg" alt="HTML: logo" title="HTML"></img>
+            <img class="skill skill-2" src="img/logo-skills/css3.svg" alt="CSS3: logo" title="CSS3"></img>
+            <img class="skill skill-3" src="img/logo-skills/javascript.svg" alt="JavaScript: logo" title="JavaScript"></img>
+            <img class="skill skill-4" src="img/logo-skills/git.svg" alt="Git: logo" title="Git"></img>
+            <img class="skill skill-5" src="img/logo-skills/github.svg" alt="Github: logo" title="Github"></img>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <h2 class="heading-secondary">Contact</h2>
+        <div class="cta container-small center">
+          <p class="cta-text">I'll make sure to get back to you.</p>
+          <a class="btn" href="mailto:veronika.javor@gmail.com">Contact me</a>
+        </div>
+      </section>
+
+      <footer class="footer"> 
+        <div class="container-small center">
+          <a href="#" class="footer-logo-link">
+            <img src="img/logo/logo.png" class="logo" alt="Veronika Javor Logo" />
+          </a>
+          <div class="socials">
+              <a class="socials__link" href="https://github.com/VeraQueen"><ion-icon class="icon" name="logo-github" title="github"></ion-icon></a>
+              <a class="socials__link" href="https://www.linkedin.com/in/veronika-javor"><ion-icon class="icon" name="logo-linkedin" title="linkedin"></ion-icon></a>
+              <a class="socials__link" href="https://codepen.io/VeraQueen"><ion-icon class="icon" name="logo-codepen" title="codepen"></ion-icon></a>
+              <a class="socials__link" href="https://www.instagram.com/vera_javor"><ion-icon class="icon" name="logo-instagram" title="instagram"></ion-icon></a>
+              <a class="socials__link" href="mailto:veronika.javor@gmail.com"><ion-icon class="icon" name="mail" title="e-mail"></ion-icon></a>
+          </div>
+          <p class="copyright">Designed and built by Veronika Javor.</p>
+        </div>
+      </footer>
+    </main>
+  
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
