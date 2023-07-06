@@ -47,7 +47,6 @@
 
   .nav-list__link:link,
   .nav-list__link:visited {
-    font-size: 2rem;
     transition: var(--transition-short);
   }
 
@@ -102,6 +101,8 @@
 
   .about-grid {
     grid-template-columns: 1fr;
+    row-gap: 1rem;
+    column-gap: 0;
   }
 
   .about-item-1 {
@@ -152,17 +153,21 @@
   }
 
   .project-image-container {
-    grid-area: 1 / 2 / 5 / 8;
+    grid-area: 1 / 1 / 5 / 9;
   }
 
   .project-info-box {
-    grid-area: 3 / 2 / -1 / 8;
-    padding: 1rem;
+    grid-area: 3 / 1 / -1 / -1;
+    padding: 1rem 0;
   }
 
-  .about-grid {
-    row-gap: 1rem;
-    column-gap: 0;
+  .about-description {
+    line-height: 1.5;
+  }
+
+  .illustrations-container {
+    width: 20rem;
+    height: 15rem;
   }
 }
 
@@ -172,18 +177,43 @@
 
 @media (max-width: 34em) {
   :root {
-    --h1-font-size: 5rem;
-    --h2-font-size: 3rem;
+    --h1-font-size: 3.5rem;
+    --h2-font-size: 2.5rem;
     --h3-font-size: 1.5rem;
+
+    --default-font-size: 1rem;
+  }
+
+  .nav-list__link:link,
+  .nav-list__link:visited {
+    font-size: 1.125rem;
   }
 
   .btn,
   .btn-transparent {
-    margin: 0.5em 0.5em;
+    margin: 0.5em 0.2em;
   }
 
   .heading-primary,
   .heading-secondary {
     letter-spacing: 1px;
+  }
+
+  .tag {
+    font-size: var(--font-size-xs);
+  }
+
+  .project-attributes {
+    gap: 1rem;
+    flex-flow: row wrap;
+    margin-top: 1rem;
+  }
+
+  .skill {
+    width: 2.5rem;
+  }
+
+  .container-skills {
+    gap: 1rem;
   }
 }

@@ -490,7 +490,7 @@ body {
 
 .attribute-list {
   list-style: none;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .source-link:link .source-icon,
