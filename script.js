@@ -194,23 +194,24 @@ overlay.addEventListener("click", toggleMobileSettings);
 // PROJECT IMAGE ANIMATION //
 /////////////////////////////////////////
 
+const projectImg = document.querySelectorAll(".project-img");
+
 const projectImgContainer = document.querySelectorAll(
   ".project-image-container"
 );
-const projectImg = document.querySelectorAll(".project-img");
-const projectInfoBox = document.querySelectorAll(".project-info-box");
+const projectImgContainerArr = Array.from(projectImgContainer);
 
-projectImg.forEach((img) => {
+const projectInfoBox = document.querySelectorAll(".project-info-box");
+const projectInfoBoxArr = Array.from(projectInfoBox);
+
+projectImg.forEach((img, i) => {
   img.addEventListener("mouseover", function () {
-    projectImgContainer.forEach(
-      (imgContainer) => (imgContainer.style.zIndex = 2)
-    );
-    projectInfoBox.forEach((infoBox) => (infoBox.style.opacity = 0.3));
+    projectImgContainerArr[i].style.zIndex = 2;
+    projectInfoBoxArr[i].style.opacity = 0.3;
   });
+
   img.addEventListener("mouseout", function () {
-    projectImgContainer.forEach(
-      (imgContainer) => (imgContainer.style.zIndex = 0)
-    );
-    projectInfoBox.forEach((infoBox) => (infoBox.style.opacity = 1));
+    projectImgContainerArr[i].style.zIndex = 0;
+    projectInfoBoxArr[i].style.opacity = 1;
   });
 });
