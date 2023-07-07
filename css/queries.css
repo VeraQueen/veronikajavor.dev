@@ -77,6 +77,15 @@
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
+
+  .nav-open .nav-list__link:link:focus-visible,
+  .nav-open .nav-list__link:visited:focus-visible,
+  .nav-open .nav-list__link:hover:focus-visible,
+  .nav-open .nav-list__link:active:focus-visible {
+    outline: 3px solid var(--text-clr);
+    outline-offset: 3px;
+  }
+
   /* END OF MOBILE NAV SETTINGS */
 
   .grid-2-cols {
@@ -87,7 +96,7 @@
   }
 
   .project-image-container {
-    grid-area: 1 / 1 / 5 / 8;
+    grid-area: 1 / 1 / 4 / 8;
   }
 
   .project-info-box {
