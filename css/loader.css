@@ -1,0 +1,107 @@
+.loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: #030016;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  animation: disappear 500ms 1500ms forwards;
+  z-index: 10000;
+}
+
+.logo_box {
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo_letter {
+  visibility: hidden;
+  color: transparent;
+  text-transform: uppercase;
+  font-size: 8rem;
+  display: inline;
+  font-family: sans-serif;
+  -webkit-text-stroke: 2px #c00021;
+  animation: appear 350ms 800ms linear forwards, disappear 400ms 1500ms forwards;
+}
+
+.logo_box::before,
+.logo_box::after {
+  content: "";
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+}
+
+.logo_box::before {
+  visibility: hidden;
+  border-top-right-radius: 1rem;
+  border-top: 0.5px solid #c00021;
+  border-right: 0.5px solid #c00021;
+  animation: appear 350ms 500ms linear forwards,
+    stretch-before 700ms 1500ms linear forwards;
+}
+
+.logo_box::after {
+  visibility: hidden;
+  border-bottom: 0.5px solid #c00021;
+  border-left: 0.5px solid #c00021;
+  animation: appear 350ms 500ms linear forwards,
+    stretch-after 700ms 1500ms linear forwards;
+}
+
+@keyframes appear {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes stretch-before {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  20% {
+    transform: translate(30%, -25%);
+  }
+  70% {
+    transform: translate(-20%, 20%);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes stretch-after {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  20% {
+    transform: translate(-30%, 25%);
+  }
+  70% {
+    transform: translate(20%, -20%);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
