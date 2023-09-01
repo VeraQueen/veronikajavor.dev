@@ -6,6 +6,11 @@
   .socials {
     padding: 1em;
   }
+
+  .project-attributes,
+  .attribute-list {
+    flex-wrap: wrap;
+  }
 }
 
 /* ********************** */
@@ -100,12 +105,8 @@
   }
 
   .project-info-box {
-    grid-area: 2 / 4 / 5 / 9;
+    grid-area: 2 / 2 / 5 / 9;
     padding: 1rem;
-  }
-
-  .attribute-list {
-    gap: 0.5rem;
   }
 
   .about-grid {
