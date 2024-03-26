@@ -391,6 +391,11 @@ body {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 0;
+  margin-bottom: 2rem;
+}
+
+.grid-2-cols:last-child {
+  margin-bottom: 0;
 }
 
 .project-image-container {
@@ -455,6 +460,17 @@ body {
   color: var(--text-clr);
   font-size: var(--default-font-size);
   line-height: 1.7;
+}
+
+.demo-account-box {
+  background-color: #c00021;
+  padding: 0.5rem;
+  max-width: 80%;
+  margin-top: 1rem;
+  text-align: start;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.3rem;
 }
 
 .tag {
